@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, MoveHorizontal } from 'lucide-react';
+import { heroImage, paintProtectionImage } from '../data/detailingData';
 
 export const BeforeAfterSlider: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -58,7 +59,7 @@ export const BeforeAfterSlider: React.FC = () => {
           >
             {/* "After" Image (Full background) */}
             <img
-              src="/src/assets/images/service_paint_protection_1792463321512.jpg"
+              src={paintProtectionImage}
               alt="Hawkeye Auto Detail paint correction after ceramic coating"
               className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -73,7 +74,7 @@ export const BeforeAfterSlider: React.FC = () => {
               style={{ width: `${sliderPosition}%` }}
             >
               <img
-                src="/src/assets/images/hero_detail_gloss_1792463321207.jpg"
+                src={heroImage}
                 alt="Vehicle prior to detailing"
                 className="absolute inset-0 w-full h-full object-cover filter contrast-75 brightness-75 grayscale-[40%]"
                 style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%', maxWidth: 'none' }}

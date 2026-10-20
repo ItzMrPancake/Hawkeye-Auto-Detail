@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Star, Calendar, Calculator, MapPin, Sparkles, CheckCircle2 } from 'lucide-react';
-import { BUSINESS_INFO } from '../data/detailingData';
+import { BUSINESS_INFO, heroImage } from '../data/detailingData';
 
 interface HeroProps {
   onBookClick: () => void;
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onQuoteClick }) => {
             <div className="relative rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 group">
               {/* High-Fidelity Generated Hero Photo */}
               <img
-                src="/src/assets/images/hero_detail_gloss_1792463321207.jpg"
+                src={heroImage}
                 alt="Hawkeye Auto Detail studio featuring pristine sports car under inspection lighting"
                 className="w-full h-80 sm:h-96 lg:h-[460px] object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"

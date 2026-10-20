@@ -1,4 +1,10 @@
 import { ServicePackage, Review, AddOnOption } from '../types';
+import heroImage from '../assets/images/hero_detail_gloss_1792463321207.jpg';
+import interiorImage from '../assets/images/service_interior_detail_1792463321886.jpg';
+import exteriorImage from '../assets/images/service_exterior_wash_1792463321515.jpg';
+import paintProtectionImage from '../assets/images/service_paint_protection_1792463321512.jpg';
+
+export { heroImage, interiorImage, exteriorImage, paintProtectionImage };
 
 export const BUSINESS_INFO = {
   name: 'Hawkeye Auto Detail',
@@ -37,7 +43,7 @@ export const SERVICES: ServicePackage[] = [
     tagline: 'Complete cabin renewal with hot steam extraction and leather preservation.',
     description:
       'Engineered to return your vehicle’s cabin to showroom fresh standards. We tackle embedded Texas red dirt, coffee stains, pet dander, and allergen buildup using hospital-grade dry steam and pH-balanced conditioners.',
-    image: '/src/assets/images/service_interior_detail_1792463321886.jpg',
+    image: interiorImage,
     duration: '3.0 – 4.5 hrs',
     startingPrice: 165,
     popular: true,
@@ -58,7 +64,7 @@ export const SERVICES: ServicePackage[] = [
     tagline: 'Multi-stage scratch-free wash, chemical decontamination, and high-gloss sealant.',
     description:
       'Far beyond a tunnel car wash. We utilize a two-bucket grit-guard system with deionized spot-free water, thick pH-neutral snow foam, wheel barrel detailing, and paint decontamination to preserve clear coat clarity.',
-    image: '/src/assets/images/service_exterior_wash_1792463321515.jpg',
+    image: exteriorImage,
     duration: '2.0 – 3.0 hrs',
     startingPrice: 120,
     features: [
@@ -79,7 +85,7 @@ export const SERVICES: ServicePackage[] = [
     tagline: 'Multi-stage machine paint correction and multi-year ceramic nano-coatings.',
     description:
       'The gold standard of paint preservation. We eliminate swirl marks, light scratches, and oxidation via dual-action machine polishing before sealing your vehicle under a 9H hardness ceramic shield engineered for the Texas sun.',
-    image: '/src/assets/images/service_paint_protection_1792463321512.jpg',
+    image: paintProtectionImage,
     duration: '6.0 – 10.0 hrs',
     startingPrice: 450,
     popular: false,
