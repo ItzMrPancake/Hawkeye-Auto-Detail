@@ -1,0 +1,6 @@
+{
+  "name": "Hawkeye Auto Detail",
+  "description": "Premier auto detailing in Wichita Falls, TX. High-end interior detailing, exterior foam wash, and ceramic paint protection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
